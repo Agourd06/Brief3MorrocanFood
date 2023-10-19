@@ -1,3 +1,8 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;1,9..40,100&family=Dancing+Script:wght@500&family=Inter:wght@500&family=Lexend:wght@100;500&family=Lora:ital@1&family=Mulish:ital,wght@0,200;0,400;1,300&family=Playfair+Display&family=Poppins:ital,wght@0,400;1,300&display=swap');
+ 
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;1,9..40,100&family=Dancing+Script:wght@500&family=Inter:wght@500&family=Lexend:wght@100;500&family=Lora:ital@1&family=Mulish:ital,wght@0,200;0,400;1,300&family=Playfair+Display:ital@1&family=Poppins:ital,wght@0,400;1,300&family=Ubuntu:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -45,8 +50,16 @@ header img {
 
 nav a {
     margin-right: 22px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
+}
+
+.active:hover{
+    height: 500px;
+    width: 150px;
+    background-color: white;
+    border-radius: 30px;
+    filter: drop-shadow(2px 7px 5px rgba(0, 0, 0, 0.547));
 }
 
 
@@ -194,7 +207,15 @@ nav a {
     margin: auto;
 }
 
+
+
+
+
 /* footer */
+
+
+
+
 
 
 footer{
@@ -203,6 +224,8 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center ;
+    font-family: 'DM Sans', sans-serif;
+
 }
 .footercontent{
     width: 70%;
@@ -244,7 +267,72 @@ footer{
 .rights{
     color: #DBDFD0;
     margin-bottom: 10px;
-    
+}
 
 
+
+
+
+
+
+/* Menu */
+
+
+
+
+
+
+
+
+.Menu{
+    height: 170vh;
+    background-color: #FAF8FF;
+    width: 95%;
+    margin: auto;
+}
+.menutop{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.menutitle h1{
+    font-size: 70px;
+    font-family: 'Playfair Display', serif;
+}
+.Menucartes{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.cartespos{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.cartes{
+    width: 350px;
+    height: 360px;
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+}
+.cartes:hover{
+    border: 3px black solid;
+}
+.cartecontente img{
+    width: 100%;
+    height: 40%;
+    margin-bottom: 15px;
+    border-radius: 25px;
+}
+.cartes h1{
+    margin-bottom: 15px;
+    color: #AD343E;
+}
+.cartes h4{
+    margin-bottom: 15px;
 }
