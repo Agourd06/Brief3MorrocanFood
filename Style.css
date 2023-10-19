@@ -6,6 +6,7 @@
 a {
     text-decoration: none;
     color: inherit;
+    
 }
 
 
@@ -142,30 +143,6 @@ nav a {
     background-color: #FAF8FF;
 }
 
-.aboutcontente {
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.aboutcontente img {
-    height: 90%;
-    width: 90%;
-}
-
-.aboutcontente h1 {
-
-    font-size: 40px;
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 30px;
-}
-
-.aboutcontente p {
-
-    font-size: 20px;
-    font-family: 'Playfair Display', serif;
-}
 
 
 
@@ -183,24 +160,91 @@ nav a {
     height: 85vh;
     background-color: #FAF8FF;
 }
-.deliverycontente{
+.Homecontente{
     height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.deliverycontente img{
+.Homecontente img{
     height: 90%;
     width: 90%;
+    border-radius: 10px;
+    filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.511));
 }
-.deliverycontente h1 {
+.Homecontente h1 {
 
     font-size: 40px;
     font-family: 'Playfair Display', serif;
     margin-bottom: 30px;
 }
-.deliverycontente p {
+.Homecontente p {
 
     font-size: 20px;
     font-family: 'Playfair Display', serif;
+    margin: 30px 0px 30px 0px;
+}
+.Homecontente li{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.cut{
+    width: 70%;
+    margin: auto;
+}
+
+/* footer */
+
+
+footer{
+    height: 50vh;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+.footercontent{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    
+}
+.footercontent p{
+    margin-bottom: 20px;
+    color: #DBDFD0;
+}
+.footercontent img{
+    height: 100px;
+    width: 250px;
+    margin-bottom: 10px;
+
+}
+.footerpages{
+    width: 30%;
+}
+.footerpages > p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.footermenu{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footermenu p{
+    margin-bottom: 20px;
+    color: #DBDFD0;
+}
+.rights{
+    color: #DBDFD0;
+    margin-bottom: 10px;
+    
+
+
 }
