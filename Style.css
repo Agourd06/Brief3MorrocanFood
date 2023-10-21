@@ -1,17 +1,20 @@
 
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;1,9..40,100&family=Dancing+Script:wght@500&family=Inter:wght@500&family=Lexend:wght@100;500&family=Lora:ital@1&family=Mulish:ital,wght@0,200;0,400;1,300&family=Playfair+Display&family=Poppins:ital,wght@0,400;1,300&display=swap');
- 
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;1,9..40,100&family=Dancing+Script:wght@500&family=Inter:wght@500&family=Lexend:wght@100;500&family=Lora:ital@1&family=Mulish:ital,wght@0,200;0,400;1,300&family=Playfair+Display:ital@1&family=Poppins:ital,wght@0,400;1,300&family=Ubuntu:wght@300&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 a {
     text-decoration: none;
     color: inherit;
     
+}
+body{
+  height:100vh ;  
 }
 
 
@@ -112,7 +115,7 @@ nav a {
 
 }
 
-.Menubutton {
+.menubutton {
 
     display: flex;
     justify-content: center;
@@ -122,7 +125,7 @@ nav a {
 
 }
 
-.Menubutton button {
+.menubutton button {
     background-color: rgba(250, 235, 215, 0);
     border-radius: 110px;
     cursor: pointer;
@@ -173,31 +176,31 @@ nav a {
     height: 85vh;
     background-color: #FAF8FF;
 }
-.Homecontente{
+.homecontente{
     height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.Homecontente img{
+.homecontente img{
     height: 90%;
     width: 90%;
     border-radius: 10px;
     filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.511));
 }
-.Homecontente h1 {
+.homecontente h1 {
 
     font-size: 40px;
     font-family: 'Playfair Display', serif;
     margin-bottom: 30px;
 }
-.Homecontente p {
+.homecontente p {
 
     font-size: 20px;
     font-family: 'Playfair Display', serif;
     margin: 30px 0px 30px 0px;
 }
-.Homecontente li{
+.homecontente li{
     font-weight: bold;
     font-size: 15px;
     margin-top: 10px;
@@ -254,15 +257,16 @@ footer{
     margin-bottom: 20px;
     color: white;
 }
-.footermenu{
+.footermenus{
     width: 100%;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
 }
-.footermenu p{
-    margin-bottom: 20px;
-    color: #DBDFD0;
+
+.menufoter,.menufoter1 a{
+    line-height: 2;
+    color:#DBDFD0 ;
 }
 .rights{
     color: #DBDFD0;
@@ -284,33 +288,33 @@ footer{
 
 
 
-.Menu{
+.menu{
     height: 170vh;
     background-color: #FAF8FF;
-    width: 95%;
-    margin: auto;
+   
+  
 }
 .menutop{
     height: 30%;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     text-align: center;
-    margin-bottom: 30px;
+    
 }
 .menutitle h1{
     font-size: 70px;
     font-family: 'Playfair Display', serif;
 }
-.Menucartes{
+.menucartes{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
    
 }
 
 .cartespos{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 .cartes{
@@ -335,4 +339,203 @@ footer{
 }
 .cartes h4{
     margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+/* Contact us  */
+
+
+
+
+
+.contact{
+    height: 120vh;
+    background-image: linear-gradient(180deg, rgb(250,248,255) 50%, rgb(255, 255, 255) 50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+.contacttop{
+    
+    height: 41%;
+     text-align: center;
+    display: flex;
+    align-items: end;
+}
+.contacttitle p{
+    line-height: 2;
+}
+.contacttitle h1{
+    font-size: 65px;
+    font-family: 'Playfair Display', serif;
+
+}   
+
+
+
+
+/* inputs */
+
+.InputsBack{
+    width: 42%;
+    height: 81%;
+    background-color: #ffffff;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(2px 2px 50px rgba(0, 0, 0, 0.088));
+}
+.contact-inputs{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    
+   
+}
+.contact-inputs button{
+    display: flex;
+    justify-content: center;
+}
+
+
+input[type=text],
+
+input[type=email],
+input[type=tel] {
+   
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+
+}
+
+select {
+    width: 200px;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: rgb(0, 0, 0)
+
+}
+
+.Submit-button {
+    border-radius: 15px;
+    border: none;
+    width: 97%;
+    height: 40px;
+    background-color: #AD343E;
+    color: rgb(255, 255, 255);
+    font-family: 'Mulish', sans-serif;
+    font-size: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    
+}
+
+.Submit-button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.889);
+    transition-duration: 80ms;
+}
+.Inputs-message{
+    height: 14vh ;
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 20px;
+   
+    
+}
+.contactInfo{
+    width: 60%;
+    margin: auto;
+    height: 25vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 2;
+}
+.contactInfo h2{
+    color: #AD343E;
+}
+
+
+
+
+
+/* aboutus */
+
+
+
+
+
+.AboutBack{
+    height: 100vh;
+    background-color: #FAF8FF;
+
+}
+.aboutTitle{
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 28%;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 900;
+    letter-spacing: 10px;
+}
+.aboutUs{
+    height: 65%;
+    width: 80%;
+    margin: auto;
+}
+.aboutuscont{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+}
+.aboutuscont img{
+    height: 55%;
+    width: 95%;
+    border-radius: 10px;
+    filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.511));
+}
+
+.aboutchild{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+.historycont{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+}
+.historycont img{
+    height: 55%;
+    width: 95%;
+    border-radius: 10px;
+    filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.511));
 }
