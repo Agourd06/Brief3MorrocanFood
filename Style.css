@@ -31,6 +31,10 @@ body{
 nav{
     background-color: rgb(255, 255, 255);
     filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.395));
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 3;
 }
 nav img{
     height: 3rem;
@@ -66,7 +70,7 @@ nav li:first-child{
     right: 0;
     height: 100vh;
     width: 250px;
-    background-color: rgba(255, 255, 255, 0.515);
+    background-color: rgba(255, 255, 255, 0.763);
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -88,7 +92,7 @@ nav li:first-child{
         display: block;
     }
 }
-@media (max-width:400px) {
+@media (max-width:420px) {
     .sideBar{
         width: 100vw;
     }
@@ -358,7 +362,7 @@ footer{
     text-align: center;
 }
 .cartes:hover{
-    border: 3px black solid;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.518));
 }
 .cartecontente img{
     width: 100%;
@@ -434,8 +438,12 @@ footer{
     width: 96%;
     font-family: 'DM Sans', sans-serif;
     font-weight: 600;
+    margin-top: 20px;
     
    
+}
+.contact-inputs input,textarea:focus{
+    outline: 0;
 }
 .contact-inputs button{
     display: flex;
@@ -452,7 +460,7 @@ input[type=tel] {
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-bottom: 20px;
+   
     border-radius: 15px;
 
 }
@@ -462,7 +470,7 @@ select {
     padding: 12px 20px;
     margin-bottom: 10px;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 4px;
     color: rgb(0, 0, 0)
 
@@ -491,6 +499,7 @@ select {
 }
 .Inputs-message{
     height: 14vh ;
+    border: 2px solid #ccc;
     border-radius: 6px;
     width: 100%;
     margin-bottom: 20px;
@@ -572,3 +581,46 @@ select {
     border-radius: 10px;
     filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.511));
 }
+#rejectemail,#rejectmessag,#rejectnumber{
+    display: none;
+}
+
+
+
+
+/* FaQPage */
+.FaQBack {
+    height: 100vh;
+    background-color: #FAF8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.faqTitle{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    
+}
+.question-button {
+    height: 8vh;
+    width: 60%;
+   border-radius: 20px;
+    cursor: pointer;
+    
+    margin-bottom: 10px;
+}
+
+
+.answer {
+    display: none;
+    width: 60%;
+}
+.answer li{
+    font-size: 20px;
+    text-align: left;
+}
+
