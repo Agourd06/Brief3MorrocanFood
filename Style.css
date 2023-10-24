@@ -1,6 +1,5 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;1,9..40,100&family=Dancing+Script:wght@500&family=Inter:wght@500&family=Lexend:wght@100;500&family=Lora:ital@1&family=Mulish:ital,wght@0,200;0,400;1,300&family=Playfair+Display&family=Poppins:ital,wght@0,400;1,300&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;1,9..40,100&family=Dancing+Script:wght@500&family=Inter:wght@500&family=Lexend:wght@100;500&family=Lora:ital@1&family=Mulish:ital,wght@0,200;0,400;1,300&family=Playfair+Display:ital@1&family=Poppins:ital,wght@0,400;1,300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;1,9..40,100&family=Dancing+Script:wght@500&family=Inter:wght@500&family=Lexend:wght@100;500&family=Lora:ital@1&family=Mulish:ital,wght@0,200;0,400;1,300&family=Playfair+Display&family=Poppins:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;1,9..40,100&family=Dancing+Script:wght@500&family=Inter:wght@500&family=Lexend:wght@100;500&family=Lora:ital@1&family=Mulish:ital,wght@0,200;0,400;1,300&family=Playfair+Display:ital@1&family=Poppins:ital,wght@0,400;1,300&family=Ubuntu:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -11,10 +10,11 @@
 a {
     text-decoration: none;
     color: inherit;
-    
+
 }
-body{
-  min-height:100vh ;  
+
+body {
+    min-height: 100vh;
 }
 
 
@@ -28,7 +28,7 @@ body{
 
 
 
-nav{
+nav {
     background-color: rgb(255, 255, 255);
     filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.395));
     position: fixed;
@@ -36,41 +36,48 @@ nav{
     left: 0;
     z-index: 3;
 }
-nav img{
+
+nav img {
     height: 3rem;
     width: 7rem;
 }
-nav ul{
-width: 100%;
-list-style: none;
-display: flex;
-justify-content: flex-end;
-align-items: center;
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+
 nav li {
     height: 3rem;
 }
-nav a{
+
+nav a {
     height: 100%;
     padding: 0 20px 0 20px;
-   display: flex;
-   align-items: center;
-   
+    display: flex;
+    align-items: center;
+
 }
-nav a:hover{
+
+nav a:hover {
     background-color: rgba(0, 0, 0, 0.432);
     color: white;
 }
-nav li:first-child{
+
+nav li:first-child {
     margin-right: auto;
 }
-.sideBar{
+
+.sideBar {
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
     width: 250px;
-    background-color: rgba(255, 255, 255, 0.763);
+    background-color: rgba(255, 255, 255, 0.873);
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -78,22 +85,27 @@ nav li:first-child{
     z-index: 999;
     backdrop-filter: blur(20px);
 }
-.sideBar li{
+
+.sideBar li {
     width: 100%;
 }
-.menu-button{
+
+.menu-button {
     display: none;
 }
+
 @media (max-width:800px) {
-    .hideOnMobil{
+    .hideOnMobil {
         display: none;
     }
-    .menu-button{
+
+    .menu-button {
         display: block;
     }
 }
+
 @media (max-width:420px) {
-    .sideBar{
+    .sideBar {
         width: 100vw;
     }
 }
@@ -209,40 +221,46 @@ nav li:first-child{
 
 
 
-.deliveryhome{
+.deliveryhome {
     height: 85vh;
     background-color: #FAF8FF;
 }
-.homecontente{
+
+.homecontente {
     height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.homecontente img{
+
+.homecontente img {
     height: 90%;
     width: 90%;
     border-radius: 10px;
     filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.511));
 }
+
 .homecontente h1 {
 
     font-size: 40px;
     font-family: 'Playfair Display', serif;
     margin-bottom: 30px;
 }
+
 .homecontente p {
 
     font-size: 20px;
     font-family: 'Playfair Display', serif;
     margin: 30px 0px 30px 0px;
 }
-.homecontente li{
+
+.homecontente li {
     font-weight: bold;
     font-size: 15px;
     margin-top: 10px;
 }
-.cut{
+
+.cut {
     width: 70%;
     margin: auto;
 }
@@ -258,54 +276,62 @@ nav li:first-child{
 
 
 
-footer{
-    height: 50vh;
+footer {
+    min-height: 50vh;
     background-color: #000000;
     display: flex;
     flex-direction: column;
-    align-items: center ;
+    align-items: center;
     font-family: 'DM Sans', sans-serif;
 
 }
-.footercontent{
+
+.footercontent {
     width: 70%;
     margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
-    
+
+
 }
-.footercontent p{
+
+.footercontent p {
     margin-bottom: 20px;
     color: #DBDFD0;
 }
-.footercontent img{
+
+.footercontent img {
     height: 100px;
     width: 250px;
     margin-bottom: 10px;
 
 }
-.footerpages{
+
+.footerpages {
     width: 30%;
 }
-.footerpages > p {
+
+.footerpages>p {
     text-align: center;
     margin-bottom: 20px;
     color: white;
 }
-.footermenus{
+
+.footermenus {
     width: 100%;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
 }
 
-.menufoter,.menufoter1 a{
+.menufoter,
+.menufoter1 a {
     line-height: 2;
-    color:#DBDFD0 ;
+    color: #DBDFD0;
 }
-.rights{
+
+.rights {
     color: #DBDFD0;
     margin-bottom: 10px;
 }
@@ -325,56 +351,70 @@ footer{
 
 
 
-.menu{
+.menu {
     height: 170vh;
     background-color: #FAF8FF;
-   
-  
+
+
 }
-.menutop{
+
+.menutop {
     height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+
 }
-.menutitle h1{
+
+.menutitle h1 {
     font-size: 70px;
     font-family: 'Playfair Display', serif;
 }
-.menucartes{
+
+.menucartes {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
    
+
 }
 
-.cartespos{
+.cartespos {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.cartes{
+.cartespos1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.cartes {
     width: 350px;
     height: 360px;
     background-color: white;
     border-radius: 25px;
     text-align: center;
 }
-.cartes:hover{
+
+.cartes:hover {
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.518));
 }
-.cartecontente img{
+
+.cartecontente img {
     width: 100%;
     height: 40%;
     margin-bottom: 15px;
     border-radius: 25px;
 }
-.cartes h1{
+
+.cartes h1 {
     margin-bottom: 15px;
     color: #AD343E;
 }
-.cartes h4{
+
+.cartes h4 {
     margin-bottom: 15px;
 }
 
@@ -390,39 +430,43 @@ footer{
 
 
 
-.contact{
+.contact {
     height: 120vh;
-    background-image: linear-gradient(180deg, rgb(250,248,255) 50%, rgb(255, 255, 255) 50%);
+    background-image: linear-gradient(180deg, rgb(250, 248, 255) 50%, rgb(255, 255, 255) 50%);
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
 
 }
-.contacttop{
-    
+
+.contacttop {
+
     height: 41%;
-     text-align: center;
+    text-align: center;
     display: flex;
     align-items: end;
+    
 }
-.contacttitle p{
+
+.contacttitle p {
     line-height: 2;
 }
-.contacttitle h1{
+
+.contacttitle h1 {
     font-size: 65px;
     font-family: 'Playfair Display', serif;
 
-}   
+}
 
 
 
 
 /* inputs */
 
-.InputsBack{
+.InputsBack {
     width: 42%;
     height: 81%;
     background-color: #ffffff;
@@ -432,20 +476,24 @@ footer{
     align-items: center;
     filter: drop-shadow(2px 2px 50px rgba(0, 0, 0, 0.088));
 }
-.contact-inputs{
+
+.contact-inputs {
     display: flex;
     flex-direction: column;
     width: 96%;
     font-family: 'DM Sans', sans-serif;
     font-weight: 600;
     margin-top: 20px;
-    
-   
+
+
 }
-.contact-inputs input,textarea:focus{
+
+.contact-inputs input,
+textarea:focus {
     outline: 0;
 }
-.contact-inputs button{
+
+.contact-inputs button {
     display: flex;
     justify-content: center;
 }
@@ -455,12 +503,12 @@ input[type=text],
 
 input[type=email],
 input[type=tel] {
-   
+
     padding: 12px 20px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
-   
+
     border-radius: 15px;
 
 }
@@ -473,7 +521,6 @@ select {
     border: 2px solid #ccc;
     border-radius: 4px;
     color: rgb(0, 0, 0)
-
 }
 
 .Submit-button {
@@ -489,7 +536,7 @@ select {
     display: flex;
     align-items: center;
     font-weight: 600;
-    
+
 }
 
 .Submit-button:hover {
@@ -497,16 +544,18 @@ select {
     background-color: rgba(0, 0, 0, 0.889);
     transition-duration: 80ms;
 }
-.Inputs-message{
-    height: 14vh ;
+
+.Inputs-message {
+    height: 14vh;
     border: 2px solid #ccc;
     border-radius: 6px;
     width: 100%;
     margin-bottom: 20px;
-   
-    
+
+
 }
-.contactInfo{
+
+.contactInfo {
     width: 60%;
     margin: auto;
     height: 25vh;
@@ -515,7 +564,8 @@ select {
     align-items: center;
     line-height: 2;
 }
-.contactInfo h2{
+
+.contactInfo h2 {
     color: #AD343E;
 }
 
@@ -529,12 +579,13 @@ select {
 
 
 
-.AboutBack{
+.AboutBack {
     height: 100vh;
     background-color: #FAF8FF;
 
 }
-.aboutTitle{
+
+.aboutTitle {
     font-size: 55px;
     display: flex;
     justify-content: center;
@@ -544,83 +595,199 @@ select {
     font-weight: 900;
     letter-spacing: 10px;
 }
-.aboutUs{
+
+.aboutUs {
     height: 65%;
     width: 80%;
     margin: auto;
 }
-.aboutuscont{
+
+.aboutuscont {
     height: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Playfair Display', serif;
+  
 }
-.aboutuscont img{
+
+.aboutuscont img {
     height: 55%;
     width: 95%;
     border-radius: 10px;
     filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.511));
 }
 
-.aboutchild{
+.aboutchild {
     width: 45%;
     display: flex;
     justify-content: center;
 }
-.historycont{
+
+.historycont {
     height: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Playfair Display', serif;
 }
-.historycont img{
+
+.historycont img {
     height: 55%;
     width: 95%;
     border-radius: 10px;
     filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.511));
 }
-#rejectemail,#rejectmessag,#rejectnumber{
+
+#rejectemail,
+#rejectmessag,
+#rejectnumber {
     display: none;
+    color: #ff4756;
 }
+
 
 
 
 
 /* FaQPage */
 .FaQBack {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #FAF8FF;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.faqTitle{
+
+.faqTitle {
     font-size: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 30%;
-    
+
 }
+
 .question-button {
     height: 8vh;
     width: 60%;
-   border-radius: 20px;
+    border-radius: 15px;
     cursor: pointer;
-    
+
     margin-bottom: 10px;
 }
 
 
 .answer {
     display: none;
-    width: 60%;
+    width: 59%;
+
+
+    text-align: center;
+    margin-bottom: 10px;
+
 }
-.answer li{
+
+.answer li {
     font-size: 20px;
     text-align: left;
 }
 
+
+
+
+/* ---------------------Responsive--------------------- */
+
+
+@media (max-width:767px) {
+    .hometext h1{
+        font-size: 70px;
+    }
+    .homecontente{
+        flex-direction: column-reverse;
+    }
+    .homecontente h1{
+        font-size: 30px;
+    }
+    .deliveryhome{
+     height:100vh ;   
+    }
+    .abouthome{
+        height:100vh ; 
+    }
+    .footercontent{
+        flex-direction: column;
+    }
+    .footerpages{
+        display: contents;
+    }
+    .acuelltext{
+        background-color: #ffffff29;
+        border-radius: 5px;
+}
+
+.contacttop {
+    height: 17%;
+}
+.contact{
+    height: 120vh;
+}
+.contactInfo {
+    
+    height: 39vh;
+    flex-direction: column;
+    text-align: center;
+}
+.contacttitle h1{
+    font-size: 51px;
+}
+.InputsBack {
+    width: 80%;
+    height: 59%;
+}
+.aboutTitle {
+    font-size: 32px;
+    height: 19%;
+}
+.aboutuscont {
+    height: 42%;
+    flex-direction: column-reverse;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.aboutuscont img {
+    height: 12vh;
+    width: 148%;
+   
+}
+.historycont {
+    height: 42%;
+    flex-direction: column;
+    font-size: 12px;
+  
+}
+.historycont img {
+    height: 12vh;
+    width: 148%;
+    
+}
+.aboutUs{
+    min-height: 100vh;
+}
+
+.AboutBack{
+    min-height: 120vh;
+   
+    display: flex;
+    align-items: center;
+}
+/* footer{
+    height: 69vh;
+} */
+.question-button{
+    width: 73%;
+}
+
+
+}
