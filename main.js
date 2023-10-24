@@ -119,7 +119,7 @@ window.onload = function () {
     window.addEventListener('resize', function () {
         if (mediascreen.matches) {
             menutop.style.height = "30vh";
-            menu.style.minHeight = "347vh";
+            menu.style.minHeight = "365vh";
             menuh1.style.fontSize = "50px";
             cartespos.style.justifyContent = "center";
             cartespos.style.alignItems = "center";

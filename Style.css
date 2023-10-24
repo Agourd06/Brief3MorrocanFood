@@ -359,7 +359,7 @@ footer {
 }
 
 .menutop {
-    height: 30%;
+    height: 27%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -396,6 +396,7 @@ footer {
     background-color: white;
     border-radius: 25px;
     text-align: center;
+    margin-top: 30px;
 }
 
 .cartes:hover {
