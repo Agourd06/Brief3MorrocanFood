@@ -119,7 +119,7 @@ window.onload = function () {
     window.addEventListener('resize', function () {
         if (mediascreen.matches) {
             menutop.style.height = "30vh";
-            menu.style.minHeight = "365vh";
+            menu.style.minHeight = "370vh";
             menuh1.style.fontSize = "50px";
             cartespos.style.justifyContent = "center";
             cartespos.style.alignItems = "center";
@@ -130,7 +130,7 @@ window.onload = function () {
          
             cartessize.style.marginTop = "30px";
         }
-        else if (mediascreen1.matches) {
+        else {
             menutop.style.height = "30%";
             menu.style.height = "170vh";
             menuh1.style.fontSize = "70px";

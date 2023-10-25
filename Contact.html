@@ -43,7 +43,7 @@
     </nav>
 
     <!-- contact page -->
-    <section class="contact">
+    <section class="contact" onclick=hideSideBar() >
         <div class="contacttop">
             <div class="contacttitle">
 
@@ -57,22 +57,22 @@
                 <label for="name" class="contact-inputs">Name
                     <input type="text" name="name" id="name" placeholder="Enter your name">
                 </label>
-                <p id="rejectmessag">la valeur ne contient pas des numeros</p>
+                <p id="rejectmessag">La valeur ne contient pas des numeros</p>
 
                 <label for="mail" class="contact-inputs">Email
-                    <input type="text" name="email" id="mail" placeholder="Enter email address" onclick=rejectbehind()>
+                    <input type="text" name="email" id="mail" placeholder="Enter email address" >
                 </label>
-                <p id="rejectemail">email in valid</p>
+                <p id="rejectemail">Email invalid</p>
 
 
                 <label for="PHONE" class="contact-inputs">Phone Number
                     <input type="text" name="Phone" id="PHONE" placeholder="Write Your Phone Number"
-                        onclick=rejectbehind()>
+                        >
                 </label>
-                <pr id="rejectnumber">la valeur ne contient pas des numeros</pr>
+                <pr id="rejectnumber">Le numero de telephone invalide</pr>
 
                 <label for="Subject" class="contact-inputs">Subject
-                    <input type="text" name="subject" id="Subject" placeholder="Write a Subject" onclick=rejectbehind()>
+                    <input type="text" name="subject" id="Subject" placeholder="Write a Subject" >
                 </label>
 
                 <label for="Message" class="contact-inputs">Message
@@ -80,7 +80,7 @@
                         placeholder="Write Your Message"></textarea>
                 </label>
 
-                <button class="Submit-button" type="submit" onclick=rejectbehind() >
+                <button class="Submit-button" type="submit"  >
                     <a>Submit</a>
                 </button>
             </form>
@@ -108,7 +108,7 @@
     </div>
     <!-- footer -->
 
-    <footer>
+    <footer onclick=hideSideBar() >
         <div class="footercontent">
             <div><img src="Images/footerlogo.png" alt="">
                 <p>In the new era of technology we look a <br> in the future with certainty and pride to <br>for our
